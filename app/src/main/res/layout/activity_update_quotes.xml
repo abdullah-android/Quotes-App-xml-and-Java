@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="?background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateQuotesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp">
+
+            <EditText
+                android:id="@+id/edtUpdateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:layout_centerHorizontal="true"
+                style="@style/CustomEditTextTheme"
+                android:background="@drawable/search_data_corners"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/edtUpdateQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtUpdateName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="@string/quote"
+                android:inputType="textMultiLine"
+                style="@style/CustomEditTextTheme"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/search_data_corners"
+                android:minHeight="100dp"
+                android:paddingStart="20dp" />
+
+            <Button
+                android:id="@+id/btnUpdateQuotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtUpdateQuote"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/green"
+                android:text="@string/update" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

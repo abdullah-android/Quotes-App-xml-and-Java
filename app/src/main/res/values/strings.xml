@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quotology</string>
+    <string name="name">Author</string>
+    <string name="quote">Quote</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_you_want_to_delete_this_quote">Are You Sure You Want to Delete this Quote?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_all">Delete All</string>
+    <string name="this_will_delete_your_all_quotes_are_you_sure_you_want">This will Delete your All Quotes Are you sure you Want?</string>
+    <string name="search">Search</string>
+    <string name="add_quote">Add Quote</string>
+    <string name="read_more">Read More</string>
+</resources>
